@@ -1,7 +1,7 @@
 import { StageResponse } from '@/types/assembly';
 
 // Base URL for your backend API - configure this when connecting to your backend
-const API_BASE_URL = 'https://assemblyfactory-production.up.railway.app/api';
+const API_BASE_URL = 'https://assemblyfactory.onrender.com';
 
 export async function processStage(endpoint: string, productName: string): Promise<StageResponse> {
   const response = await fetch(`${API_BASE_URL}${endpoint}`, {
